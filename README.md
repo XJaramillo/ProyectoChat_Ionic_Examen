@@ -5,11 +5,11 @@
 ## Nombre : 
 * **Xavier Jaramillo** 
 
-Inonic Chat desarrollado con Ionic Framework, la aplicacion APK ya instalada en un dispositvo permitira crear y borrar mensajes que conjutamente se iran guardando en Firebase de Google, los registros de los chats de los usuarios se iran guardando constantemente.
+Inonic Chat desarrollado con Ionic Framework, la aplicacion APK ya instalada en un dispositvo permitira iniciar sesión, chatear jutamente con otros usuarios, los mensajes se iran guardando en Firebase de Google de una manera cifrada, los registros de los chats de los usuarios se iran guardando constantemente y ademas con la funcionalidad
 
 :mailbox: :email:
 
-* Con la funcionalidad de CRUD ---> *Create & Read*
+
 
 ## Versiones:
 
@@ -27,3 +27,9 @@ Inonic Chat desarrollado con Ionic Framework, la aplicacion APK ya instalada en 
 ## Descarga El APK
 
 Descarga `APK` clic en el siguiente enlace [Ionic Chat](https://github.com/XJaramillo/Ionic_Chat/raw/Chat/app-debug.apk). :white_check_mark:
+
+## Enlace del video
+
+Clic en el siguiente enlace [Video explicativo de la aplicación ](https://youtube.com). :white_check_mark:
+
+
