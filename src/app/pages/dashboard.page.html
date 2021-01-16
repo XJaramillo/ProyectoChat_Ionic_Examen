@@ -3,12 +3,18 @@
     <ion-icon name="person-circle-outline"></ion-icon>
     <ion-title class="userName">Hola: {{messageData.Name}} </ion-title>
   </ion-toolbar>
+
+  <button ion-item icon-right (click)="logout()">
+    <ion-icon name="log-out" color="danger"></ion-icon>
+    Salir
+  </button>
+
 </ion-header>
 
 <ion-content #content padding id="container">
   <ion-card *ngFor="let messageData of messageList" >
     <ion-card-header>
-      {{messageData.Name}}: 
+      {{messageData.Name }} dice:
     </ion-card-header>
     <ion-card-content>
       {{messageData.Message}}
@@ -19,19 +25,17 @@
   </ion-card>
 </ion-content>
 
-  <ion-card-content class="imageContainerButton"  *ngIf="!isUploading && !isUploaded">
-    <ion-button class="imageContainer">
-      <ion-icon name="camera-outline"></ion-icon>
-      <input id="uploadBtn" type="file" class="upload" (change)="uploadFile($event.target.files)" />
-    </ion-button>
-  </ion-card-content>
+    <ion-button class="Button" *ngIf="!isUploading && !isUploaded"  >
+      <input id="uploadBtn" type="file" class="upload" (change)="uploadFile($event.target.files)"  />
+      <ion-icon name="camera-outline">
+      </ion-icon>
+  </ion-button>
 
   <ion-card class="ion-text-center" *ngIf="isUploading && !isUploaded">
 
     <ion-card-content>
       <div *ngIf="percentage | async as pct">
-        Progress: {{ pct | number }}%
-        <ion-progress-bar value="{{ pct / 100 }}"></ion-progress-bar>
+        Imagen Subida
       </div>
       <div *ngIf="snapshot | async as snap">
         
@@ -50,17 +54,17 @@
 <ion-footer id="final-scroll">
   
   <ion-toolbar>
-    <ion-input placeholder="Ingrese su mensaje"  [(ngModel)]="messageData.Message"></ion-input>
+    <ion-input placeholder="Ingrese aquí su mensaje... "  [(ngModel)]="messageData.Message"></ion-input>
 
     <ion-buttons slot="end" >
       <ion-button (click)="CreateRecord()">
         <ion-icon name="push-outline"></ion-icon>
       </ion-button>
 
+
+
+
     </ion-buttons>
   </ion-toolbar>
-  <ion-toolbar color="danger" (click)="logout()">
-    <ion-icon name="power-outline"></ion-icon>
-    <ion-title>Salir</ion-title>
-  </ion-toolbar>
+
 </ion-footer>

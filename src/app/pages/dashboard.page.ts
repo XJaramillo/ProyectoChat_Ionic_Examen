@@ -1,4 +1,4 @@
-// dashboard.page.ts
+// pages.page.ts
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { AuthenticateService } from '../services/authentication.service';
@@ -67,7 +67,7 @@ export class DashboardPage implements OnInit {
   }
 
   ngOnInit() {
-    this.passEnc = '123123';
+    this.passEnc = '54321';
     this.authService.userDetails().subscribe(res => {
       console.log('res', res);
       if (res !== null) {
