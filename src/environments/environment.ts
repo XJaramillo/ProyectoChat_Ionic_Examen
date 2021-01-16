@@ -11,7 +11,7 @@ export const environment = {
     storageBucket: "chationic-8ff18.appspot.com",
     messagingSenderId: "780992491314",
     appId: "1:780992491314:web:0193f7b8ba2e04b574712b",
-   
+    measurementId: "G-PQKDCWB3V9"
   }
 };
 
