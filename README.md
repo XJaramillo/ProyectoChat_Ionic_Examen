@@ -32,6 +32,6 @@ Descarga `APK` clic en el siguiente enlace [Ionic Chat](https://github.com/XJara
 
 ## Enlace del video
 
-Clic en el siguiente enlace [Video explicativo de la aplicación ](https://youtube.com). :white_check_mark:
+Clic en el siguiente enlace [Video explicativo de la aplicación ](https://youtu.be/tkCw_ko4oaY). :white_check_mark:
 
 
